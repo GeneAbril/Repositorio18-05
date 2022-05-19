@@ -7,32 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULADORA</title>
     <script>
-        //funcion que sume dos digitos
+        //Variables
+        var n1 = 1
+        var n2 = 2
+            //funcion que sume dos digitos
         function sumarNumeros(n1, n2) {
             let sumar = n1 + n2;
-            var n1 = parseInt(prompt("Ingresa el primer numero"));
-            var n2 = parseInt(prompt("Ingresa el primer numero"));
-            document.write("la suma es:" + sumar);
+            return sumar;
 
         }
-        sumarNumeros(n1, n2)
-            //funcion que reste dos digitos
+
+        //funcion que reste dos digitos
         function restarNumeros(n1, n2) {
-            let restar = numero1 - numero2;
-            document.write("la resta es:" + restar);
-            var n1 = parseInt(prompt("Ingresa el primer numero"));
-            var n2 = parseInt(prompt("Ingresa el primer numero"));
+            let restar = n1 - n2;
+            return restar;
+
         }
         restarNumeros(n1, n2);
 
-        function resultadoFinal(n1, n2) {
+        function resultadoFinal() {
+            //pedir dato a usuario
+            var n1 = parseInt(prompt("Ingresa el primer numero"));
+            var n2 = parseInt(prompt("Ingresa el segundo numero"));
+
             let sumaTotal = n1 + n2;
             let restaTotal = n1 - n2;
-            var n1 = parseInt(prompt("Ingresa el primer numero"));
-            var n2 = parseInt(prompt("Ingresa el primer numero"));
+            console.log("la suma es:" + sumaTotal);
+            console.log("la resta es:" + restaTotal);
         }
-        resultadoFinal(3, 1)
-        resultadoFinal(n1, n2);
+        console.log(resultadoFinal());
     </script>
 </head>
 
